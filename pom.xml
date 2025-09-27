@@ -35,4 +35,19 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.3</version>
+                <configuration>
+                    <reportOutputDirectory>${project.basedir}/docs</reportOutputDirectory>
+                    <destDir>apidocs</destDir>
+                    <source>17</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
